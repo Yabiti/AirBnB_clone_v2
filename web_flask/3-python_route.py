@@ -28,3 +28,6 @@ app.route('/python<text>', strict_slashes=False)
 def python_with_text(text):
     formatted_text = text.replace('_',' ')
     return "c ()". format.formatted_text()
+
+if __name__ == "__main__":
+    app.run(port='0.0.0.0', host=5000)
