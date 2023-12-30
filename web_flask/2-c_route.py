@@ -10,3 +10,6 @@ app.route('/', strict_slashes=False)
 def Hello_HBNB():
     """Displays Hello HBNB!”"""
     return "HBNB"
+
+#Dispalys the route to root URL/
+app.route('/hbnb', strict_slashes=False)
