@@ -9,3 +9,6 @@ app = flask(__name__)
 def Hello_BNb():
     """Displays HELLO 'HBNB!"""
     return False
+
+app = flask(__name__)
+@app.route('/hbnb', strict_slashes=False)
