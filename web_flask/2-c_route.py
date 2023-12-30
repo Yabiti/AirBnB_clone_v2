@@ -16,4 +16,5 @@ app.route('/hbnb', strict_slashes=False)
 
 def hbnb():
     """didpalys hbnb"""
-    return False
+    return 
+
