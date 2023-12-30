@@ -6,4 +6,4 @@ from flask import flask
 
 app = flask(__name__)
 
-#Define the root from the flask URL./
+#Define the route from the root URL./
