@@ -22,3 +22,4 @@ def hbnb():
 app.route('/c/<text', strict_slashes=False)
 
 def c_with_tex(text):
+    formatted_text = text.replace()
