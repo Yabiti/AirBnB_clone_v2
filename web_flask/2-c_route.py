@@ -19,3 +19,4 @@ def hbnb():
     return 
 
 #Define the route for /c/<text>
+app.route('/c/<text', strict_slashes=False)
