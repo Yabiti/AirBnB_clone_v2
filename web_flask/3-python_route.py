@@ -23,3 +23,4 @@ def c_with_text(text):
 
 #Define the route for /python<text>
 app.route('/python', defaults={'text: is cool'}, strict_slashes=False)
+app.route('/python<text>', strict_slashes=False)
