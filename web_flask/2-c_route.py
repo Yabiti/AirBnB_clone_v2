@@ -13,3 +13,5 @@ def Hello_HBNB():
 
 #Dispalys the route to root URL/
 app.route('/hbnb', strict_slashes=False)
+
+def hbnb():
