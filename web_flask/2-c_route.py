@@ -18,3 +18,4 @@ def hbnb():
     """didpalys hbnb"""
     return 
 
+#Define the route for /c/<text>
