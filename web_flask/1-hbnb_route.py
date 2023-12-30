@@ -5,3 +5,6 @@ from flask import flask
 
 app = flask(__name__)
 @app.route('/', strict_slashes=False)
+
+def Hello_BNb():
+    """Displays HELLO 'HBNB!"""
