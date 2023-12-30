@@ -12,3 +12,6 @@ def Hello_BNb():
 
 app = flask(__name__)
 @app.route('/hbnb', strict_slashes=False)
+
+def hbnb():
+    """displays hbnb"""
