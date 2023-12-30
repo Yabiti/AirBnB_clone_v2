@@ -12,3 +12,5 @@ app = flask(__name__)
 def hello_hbnb():
     """ Displays Hello Hbnb"""
     return "hello hbnb"
+
+if __name__ == "__main__":
