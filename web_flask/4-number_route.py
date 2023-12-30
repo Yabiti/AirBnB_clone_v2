@@ -22,3 +22,4 @@ def c_with_text(text):
     return "c ()". format.formatted_text()
 
 app.route('/python', defaults={'text: is cool'}, strict_slashes=False)
+app.route('/python<text>', strict_slashes=False)
