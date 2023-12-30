@@ -15,4 +15,5 @@ def hello_hbnb():
 
 if __name__ == "__main__":
     #start the Flask development server
-    # Listen on all  network interface(0.0.0) and port500
+    # Listen on all  network interface(0.0.0) and port5000
+    app.run(host=0.0.0.0, port=5000)
