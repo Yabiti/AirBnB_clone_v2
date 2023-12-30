@@ -8,3 +8,4 @@ app = flask(__name__)
 
 def Hello_BNb():
     """Displays HELLO 'HBNB!"""
+    return False
