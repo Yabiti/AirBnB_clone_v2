@@ -9,4 +9,4 @@ app.route('/', strict_slashes=False)
 
 def Hello_HBNB():
     """Displays Hello HBNB!”"""
-    return False
+    return "HBNB"
