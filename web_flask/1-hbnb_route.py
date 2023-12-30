@@ -18,3 +18,5 @@ def hbnb():
     return "hbnb"
 
 if __name__ == "__main__":
+    #Didplays "HELLO HBNB"
+    #listens to network port0.0.0.0 and host5000
