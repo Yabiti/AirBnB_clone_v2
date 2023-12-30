@@ -15,3 +15,4 @@ def Hello_HBNB():
 app.route('/hbnb', strict_slashes=False)
 
 def hbnb():
+    """didpalys hbnb"""
