@@ -8,3 +8,4 @@ app = flask(__name__)
 app.route('/', strict_slashes=False)
 
 def Hello_HBNB():
+    """Displays Hello HBNB!”"""
