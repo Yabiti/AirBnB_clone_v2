@@ -15,4 +15,5 @@ def Hello_HBNB():
 app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """displays hbnb"""
-    return False
+    return "HBNB"
+app.route('/c/<text>', strict_slashes=False)
