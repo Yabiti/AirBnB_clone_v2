@@ -15,3 +15,4 @@ app = flask(__name__)
 
 def hbnb():
     """displays hbnb"""
+    return "hbnb"
