@@ -1,33 +1,35 @@
 #!/usr/bin/python3
+"""
+starts a Flask web application
+"""
 
-#define the route to root URL./
+from flask import Flask
+app = Flask(__name__)
 
-from flask import flask
 
-app = flask(__name__)
+@app.route('/', strict_slashes=False)
+def index():
+    """returns Hello HBNB!"""
+    return 'Hello HBNB!'
 
-app.route('/', strict_slashes=False)
 
-def Hello_HBNB():
-    """displays HELLO Hbnb!"""
-    return "HELLO_HBNB"
-
-app.route('/hbnb', strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """displays hbnb"""
-    return "HBNB"
-app.route('/c/<text>', strict_slashes=False)
-def c_with_text(text):
-    formatted_text = text.replace('_',' ')
-    return "c {}". format.formatted_text()
+    """returns HBNB"""
+    return 'HBNB'
 
-#Define the route for /python<text>
-app.route('/python', defaults={'text: is cool'}, strict_slashes=False)
-app.route('/python<text>', strict_slashes=False)
 
-def python_with_text(text):
-    formatted_text = text.replace('_',' ')
-    return "c ()". format.formatted_text()
+@app.route('/c/<text>', strict_slashes=False)
+def cisfun(text):
+    """display “C ” followed by the value of the text variable"""
+    return 'C ' + text.replace('_', ' ')
 
-if __name__ == "__main__":
-    app.run(port='0.0.0.0', host=5000)
+
+@app.route('/python', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
+def pythoniscool(text='is cool'):
+    """display “Python ”, followed by the value of the text variable"""
+    return 'Python ' + text.replace('_', ' ')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')
