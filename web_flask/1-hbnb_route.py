@@ -1,23 +1,22 @@
 #!/usr/bin/python3
+"""
+starts a Flask web application
+"""
 
-"""Start a web flask application"""
-from flask import flask
+from flask import Flask
+app = Flask(__name__)
 
-app = flask(__name__)
+
 @app.route('/', strict_slashes=False)
+def index():
+    """returns Hello HBNB!"""
+    return 'Hello HBNB!'
 
-def Hello_BNb():
-    """Displays HELLO 'HBNB!"""
-    return False
 
-app = flask(__name__)
 @app.route('/hbnb', strict_slashes=False)
-
 def hbnb():
-    """displays hbnb"""
-    return "hbnb"
+    """returns HBNB"""
+    return 'HBNB'
 
-if __name__ == "__main__":
-    #Didplays "HELLO HBNB"
-    #listens to network port0.0.0.0 and host5000
-    app.run(port='0.0.0.0', host=5000)
+if __name__ = "__main__":
+    app.run(host='0.0.0.0', port='5000')
