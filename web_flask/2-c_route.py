@@ -1,29 +1,28 @@
 #!/usr/bin/python3
+"""
+starts a Flask web application
+"""
 
-from flask import flask
+from flask import Flask
+app = Flask(__name__)
 
-app = flask(__name__)
 
-#Define the route to root URL/
-app.route('/', strict_slashes=False)
+@app.route('/', strict_slashes=False)
+def index():
+    """returns Hello HBNB!"""
+    return 'Hello HBNB!'
 
-def Hello_HBNB():
-    """Displays Hello HBNB!”"""
-    return "HBNB"
 
-#Define the route to root URL/
-app.route('/hbnb', strict_slashes=False)
-
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """didpalys hbnb"""
-    return 
+    """returns HBNB"""
+    return 'HBNB'
 
-#Define the route for /c/<text>
-app.route('/c/<text', strict_slashes=False)
 
-def c_with_tex(text):
-    formatted_text = text.replace('_',' ')
-    return "c ()".format(formatted_text)
+@app.route('/c/<text>', strict_slashes=False)
+def cisfun(text):
+    """display “C ” followed by the value of the text variable"""
+    return 'C ' + text.replace('_', ' ')
 
-if __name__ == "__main__":
-    app.run(port='0.0.0.0', host=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')
